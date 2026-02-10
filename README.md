@@ -5,9 +5,6 @@ Meet MultiPDF Chat AI App! 🚀 Chat seamlessly with Multiple PDFs using Langcha
 ## 📝 Description
 The Multi-PDF's Chat Agent is a Streamlit-based web application designed to facilitate interactive conversations with a chatbot. The app allows users to upload multiple PDF documents, extract text information from them, and train a chatbot using this extracted content. Users can then engage in real-time conversations with the chatbot.
 
-## 📢Demo App with Streamlit Cloud (Visualize only)
-
-[Launch App On Streamlit](https://multi-pdfschatappai-agent.streamlit.app/)
 
 ## 💻 Demo:
 ![Demo 1: Chatbot Output](img/LLMframework.jpg)
@@ -28,22 +25,7 @@ The application follows these steps to provide responses to your questions:
 4. **Similarity Matching** : When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.
 
 5. **Response Generation** : The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
-
-![Demo 2: Chatbot Output](img/LLMApp.jpg)
-
 --- 
-## 🎯 Key Features
-
-- **Adaptive Chunking**: Our Sliding Window Chunking technique dynamically adjusts window size and position for RAG, balancing fine-grained and coarse-grained data access based on data complexity and context.
-
-- **Multi-Document Conversational QA**: Supports simple and multi-hop queries across multiple documents simultaneously, breaking the single-document limitation.
-
-- **File Compatibility**: Supports both PDF and TXT file formats.
-
-- **LLM Model Compatibility**: Supports Google Gemini Pro, OpenAI GPT 3, Anthropic Claude, Llama2 and other open-source LLMs.
-
-
-![Demo 3: Chatbot Output](img/LLMAgents.jpg)
 
 
 ## 🌟Requirements
@@ -56,7 +38,6 @@ The application follows these steps to provide responses to your questions:
 - **faiss-cpu** : FAISS (Facebook AI Similarity Search) is a library developed by Facebook for efficient similarity search, Machine Learning Embeddings,Information Retrieval, content-based filtering and clustering of dense vectors.
 - **langchain_google_genai** : It is a package that provides an integration between LangChain and Google’s generative-ai SDK. It contains classes that extend the Embeddings class and provide methods for generating embeddings. The package can be used in a multipdf chatbot application to extract textual data from PDF documents and generate Accurate responses to user queries.
 
-![Demo 4: Chatbot Output](img/CALMOutput.jpg)
 ---
 
 ## ▶️Installation
@@ -76,35 +57,5 @@ Set up your Google API key from `https://makersuite.google.com/app/apikey` by cr
 Run the Streamlit app:
 
 `streamlit run app.py`
-
----
-## 💡Usage
-
-To use the Multi-PDF-s 📚ChatApp AI Agent 🤖, U can have glimpse of look by clicking on this link : [Launch App On Streamlit](https://multi-pdfschatappai-agent.streamlit.app/). To run app, fork app and follow the below steps to start using it. Use the sidebar to upload PDF files and train the chatbot. Once trained, you can have conversations with the chatbot by entering questions in the text input field.
-
-In case You want to run & implement project on your system then follow these steps:
-
-1. Ensure that you have installed the required dependencies and added the **Google API key to the `.env` file** (MUST).
-2. Run the `app.py` file using the Streamlit CLI. Execute the following command:
-   ```
-   streamlit run app.py
-   ```
-3. The application will launch in your default web browser, displaying the user interface.
-4. Upload multiple PDF documents into the app by following the provided instructions at sidebar. On the sidebar, you'll find an option to upload PDF documents. Click on the "Upload your documents here and click on Process" button and select one or more PDF files. 
-5. Don't forget to click on Submit & Process Button.
-6. Ask questions in natural language about the loaded PDFs using the chat interface.
-7. Chatting with the Documents: After uploading and processing the PDF documents, you can ask questions by typing them in the text input field. Press Enter or click the "Ask" button to submit your question.
-
-The application will use conversational AI to provide responses based on the content of the uploaded documents. The responses will be displayed in the chat interface.
-
----
-## ©️ License 🪪 
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-#### **If you like this LLM Project do drop ⭐ to this repo**
-#### Follow me on [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gurpreetkaurjethra/) &nbsp; [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GURPREETKAURJETHRA/)
 
 ---
